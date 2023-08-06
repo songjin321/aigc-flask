@@ -51,6 +51,8 @@ def count():
     elif action == 'clear':
         delete_counterbyid(1)
         return make_succ_empty_response()
+    elif action == 'test':
+        return make_succ_response('test')
 
     # action参数错误
     else:
